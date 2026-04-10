@@ -1,0 +1,227 @@
+/* Background */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(to right, #ff4b2b, #ffffff);
+}
+
+/* White Card Container */
+.hero-box {
+    background: white;
+    color: black;
+    width: 70%;
+    margin: 100px auto;
+    padding: 60px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0px 15px 40px rgba(0,0,0,0.2);
+}
+
+/* Big Title */
+h1 {
+    font-size: 52px;
+    margin-bottom: 15px;
+}
+
+/* Tagline */
+.tagline {
+    font-size: 20px;
+    color: #444;
+    margin-bottom: 35px;
+}
+
+/* Navigation */
+nav {
+    margin-bottom: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    background-color: #ff4b2b;
+    color: white;
+    padding: 12px 28px;
+    margin: 8px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: black;
+}
+
+/* Section Heading */
+h2 {
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+/* Paragraph */
+p {
+    width: 70%;
+    margin: 15px auto;
+    font-size: 18px;
+}
+
+/* Form Styling */
+form {
+    margin-top: 25px;
+}
+
+input, textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #ff4b2b;
+    color: white;
+    padding: 10px 22px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: black;
+}
+
+/* Safety Tips List */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #ffe5e0;
+    margin: 10px auto;
+    padding: 12px;
+    border-radius: 8px;
+    width: 70%;
+}
+button {
+    background-color: #ff4b2b;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+button:hover {
+    background-color: black;
+}
+#searchInput {
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+.dark-mode {
+    background: #121212 !important;
+    color: white !important;
+}
+
+.dark-mode .hero-box {
+    background: #1e1e1e;
+    color: white;
+}
+
+.dark-mode input,
+.dark-mode textarea {
+    background: #2a2a2a;
+    color: white;
+    border: 1px solid #555;
+}
+
+.dark-mode #searchInput {
+    background: #2a2a2a;
+    color: white;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .hero-box {
+        width: 90%;
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    p {
+        width: 95%;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px auto;
+        width: 80%;
+    }
+
+    #searchInput {
+        width: 90%;
+    }
+
+}
+nav a, button {
+    transition: all 0.3s ease;
+}
+
+nav a:hover, button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+body {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+body {
+    background: linear-gradient(135deg, #ff4b2b, #ff416c);
+}
+select {
+    padding: 5px 10px;
+    border-radius: 6px;
+    border: none;
+    background: #ff4b2b;
+    color: white;
+    font-weight: bold;
+}
+.status-badge {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+    margin-left: 8px;
+}
+
+.Pending {
+    background-color: #f1c40f;
+}
+
+.Under-Review {
+    background-color: #3498db;
+}
+
+.Resolved {
+    background-color: #2ecc71;
+}

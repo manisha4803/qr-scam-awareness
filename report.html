@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Report QR Scam</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="hero-box">
+
+    <h1>Report a QR Scam</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="report.html">Report Scam</a>
+        <a href="tips.html">Safety Tips</a>
+    </nav>
+<button onclick="toggleDarkMode()" id="darkModeBtn">
+    🌙 Dark Mode
+</button>
+    <form>
+        <input type="text" placeholder="Your Name"><br><br>
+        <input type="email" placeholder="Your Email"><br><br>
+        <textarea rows="5" placeholder="Describe the scam..."></textarea><br><br>
+<input type="file" id="evidence" accept="image/*"><br><br>
+        <button type="submit">Submit Report</button>
+    </form>
+    <h3 id="reportCount">Total Reports: 0</h3>
+<input type="text" id="searchInput" placeholder="Search reports..." onkeyup="searchReports()">
+<button onclick="clearAllReports()" style="background:black;">
+    Clear All Reports
+</button>
+    <h2>Previous Reports</h2>
+    <div id="reportList"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
